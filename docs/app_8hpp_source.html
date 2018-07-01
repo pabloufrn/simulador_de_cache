@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Similador de mémoria cache: Código-Fonte de include/app.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Similador de mémoria cache
+   </div>
+   <div id="projectbrief">Esse projeto foi desenvolvido na disciplina de Introdução a arquitetura e organização  de computadores e tem o objetivo de demostrar o comportamento da mémoria cache  com diferente técnicas de mapeamento.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">app.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef APP_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define APP_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;config.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;cache.hpp&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classApp.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classApp.html">App</a></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classApp.html#a9035c72be7a12b46180e6d45b87436ee">App</a>(<a class="code" href="structConfig.html">Config</a> cfg);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classApp.html#ade8467361fe8300a45ee03433a5da7be">read</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> endereco);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classApp.html#ab72f344e7a9f4113c8624bdb2cfd16ee">write</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> endereco, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> valor);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classApp.html#aa4c457ebcb748c398fa044140514188c">show</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="structLinha.html">Linha</a>&amp; mapear(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numero_do_bloco);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="structLinha.html">Linha</a>&amp; mapeamento_direto        (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numero_do_bloco);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="structLinha.html">Linha</a>&amp; mapeamento_associativo   (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numero_do_bloco);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="structLinha.html">Linha</a>&amp; mapeamento_misto         (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numero_do_bloco, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numero_de_conjuntos);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="structLinha.html">Linha</a>&amp; substituir               (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numero_do_bloco, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numero_do_conjunto, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tamanho_do_conjunto);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="structLinha.html">Linha</a>&amp; subs_aleatoria           (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indice_do_conjunto, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tamanho_do_conjunto);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="structLinha.html">Linha</a>&amp; subs_fifo                (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indice_do_conjunto, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tamanho_do_conjunto);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="structLinha.html">Linha</a>&amp; subs_lfu                 (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indice_do_conjunto, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tamanho_do_conjunto);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="structLinha.html">Linha</a>&amp; subs_lru                 (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indice_do_conjunto, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tamanho_do_conjunto);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="structCache.html">Cache</a> cache;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="structMemoria.html">Memoria</a> memoria;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="structConfig.html">Config</a> config;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif // APP_H</span></div><div class="ttc" id="structMemoria_html"><div class="ttname"><a href="structMemoria.html">Memoria</a></div><div class="ttdoc">A mémoria é um conjunto de blocos. </div><div class="ttdef"><b>Definition:</b> cache.hpp:142</div></div>
+<div class="ttc" id="structCache_html"><div class="ttname"><a href="structCache.html">Cache</a></div><div class="ttdoc">A cache é uma mémoria próxima do processador. </div><div class="ttdef"><b>Definition:</b> cache.hpp:165</div></div>
+<div class="ttc" id="classApp_html_ab72f344e7a9f4113c8624bdb2cfd16ee"><div class="ttname"><a href="classApp.html#ab72f344e7a9f4113c8624bdb2cfd16ee">App::write</a></div><div class="ttdeci">void write(unsigned int endereco, unsigned int valor)</div><div class="ttdoc">Escreve em um endereço de mémoria um valor. </div></div>
+<div class="ttc" id="structConfig_html"><div class="ttname"><a href="structConfig.html">Config</a></div><div class="ttdoc">Estrutura que armazena as variaveis com a configuração. </div><div class="ttdef"><b>Definition:</b> config.hpp:6</div></div>
+<div class="ttc" id="classApp_html_ade8467361fe8300a45ee03433a5da7be"><div class="ttname"><a href="classApp.html#ade8467361fe8300a45ee03433a5da7be">App::read</a></div><div class="ttdeci">void read(unsigned int endereco)</div><div class="ttdoc">Ler um bloco da mémoria (trazer para uma linha da cache). </div></div>
+<div class="ttc" id="classApp_html_aa4c457ebcb748c398fa044140514188c"><div class="ttname"><a href="classApp.html#aa4c457ebcb748c398fa044140514188c">App::show</a></div><div class="ttdeci">void show()</div><div class="ttdoc">Exibe o mapa de mémoria atual da cache e da mémoria. </div></div>
+<div class="ttc" id="structLinha_html"><div class="ttname"><a href="structLinha.html">Linha</a></div><div class="ttdoc">A linha é um bloco da cache, com a diferença que ela contém os contadores. </div><div class="ttdef"><b>Definition:</b> cache.hpp:59</div></div>
+<div class="ttc" id="classApp_html_a9035c72be7a12b46180e6d45b87436ee"><div class="ttname"><a href="classApp.html#a9035c72be7a12b46180e6d45b87436ee">App::App</a></div><div class="ttdeci">App(Config cfg)</div><div class="ttdoc">Construtor da classe App. </div></div>
+<div class="ttc" id="classApp_html"><div class="ttname"><a href="classApp.html">App</a></div><div class="ttdoc">Classe responsável tanto pelo front-end quanto pelo back-end da aplicação. Essa decisão foi tomada pa...</div><div class="ttdef"><b>Definition:</b> app.hpp:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
