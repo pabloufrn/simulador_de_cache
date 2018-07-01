@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Similador de mémoria cache: Referência da Estrutura Bloco</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Similador de mémoria cache
+   </div>
+   <div id="projectbrief">Esse projeto foi desenvolvido na disciplina de Introdução a arquitetura e organização  de computadores e tem o objetivo de demostrar o comportamento da mémoria cache  com diferente técnicas de mapeamento.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structBloco-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Estrutura Bloco</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A classe bloco representa um endereço da mémoria que armazena {numero_de_palavras} palavras.  
+ <a href="structBloco.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cache_8hpp_source.html">cache.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de Hierarquia para Bloco:</div>
+<div class="dyncontent">
+<div class="center"><img src="structBloco__inherit__graph.png" border="0" usemap="#Bloco_inherit__map" alt="Inheritance graph"/></div>
+<map name="Bloco_inherit__map" id="Bloco_inherit__map">
+<area shape="rect" id="node2" href="structLinha.html" title="A linha é um bloco da cache, com a diferença que ela contém os contadores. " alt="" coords="6,80,59,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:a7690a145e0f647595d28c633d034abb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloco.html#a7690a145e0f647595d28c633d034abb3">Bloco</a> (unsigned int tamanho)</td></tr>
+<tr class="memdesc:a7690a145e0f647595d28c633d034abb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria um bloco de {tamanho} palavras.  <a href="#a7690a145e0f647595d28c633d034abb3">Mais...</a><br /></td></tr>
+<tr class="separator:a7690a145e0f647595d28c633d034abb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23af86d8bfc57541015b41571d4558f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloco.html#a23af86d8bfc57541015b41571d4558f8">Bloco</a> (unsigned int tamanho, <a class="el" href="structRandom.html">Random</a> &amp;rand)</td></tr>
+<tr class="memdesc:a23af86d8bfc57541015b41571d4558f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Criar um bloco de {tamanho} palavras com conteúdo aleatório.  <a href="#a23af86d8bfc57541015b41571d4558f8">Mais...</a><br /></td></tr>
+<tr class="separator:a23af86d8bfc57541015b41571d4558f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ac6dbb14d476c08f86f91bcb6fbce4e20"><td class="memItemLeft" align="right" valign="top"><a id="ac6dbb14d476c08f86f91bcb6fbce4e20"></a>
+std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloco.html#ac6dbb14d476c08f86f91bcb6fbce4e20">conteudo</a></td></tr>
+<tr class="memdesc:ac6dbb14d476c08f86f91bcb6fbce4e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Palavras contidas no bloco. <br /></td></tr>
+<tr class="separator:ac6dbb14d476c08f86f91bcb6fbce4e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>A classe bloco representa um endereço da mémoria que armazena {numero_de_palavras} palavras. </p>
+</div><h2 class="groupheader">Construtores &amp; Destrutores</h2>
+<a id="a7690a145e0f647595d28c633d034abb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7690a145e0f647595d28c633d034abb3">&#9670;&nbsp;</a></span>Bloco() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bloco::Bloco </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>tamanho</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cria um bloco de {tamanho} palavras. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tamanho</td><td>quantidade de palavras. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a23af86d8bfc57541015b41571d4558f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23af86d8bfc57541015b41571d4558f8">&#9670;&nbsp;</a></span>Bloco() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bloco::Bloco </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>tamanho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structRandom.html">Random</a> &amp;&#160;</td>
+          <td class="paramname"><em>rand</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Criar um bloco de {tamanho} palavras com conteúdo aleatório. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tamanho</td><td>quantidade de palavras. </td></tr>
+    <tr><td class="paramname">rand</td><td>Functor de geração de números ramdomicos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir do seguinte arquivo:<ul>
+<li>include/<a class="el" href="cache_8hpp_source.html">cache.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
