@@ -8,7 +8,7 @@ A documentação está dentro da pasta `docs` e pode ser visualizada clicando [A
 - Usando g++: 
   Use o comando `g++ -Wall -std=c++11 -Iinclude src/*` para copilar.
 ### Executando o projeto
-Use o comando `./a.out` para compilar, o programa não requer argumentos.  
+Use o comando `./a.out` para executar, o programa não requer argumentos.  
 Obs.: Tem que existir um arquivo chamado config.txt na pasta data com as 7 configurações.
 
 ### Arquivo de Configuração
