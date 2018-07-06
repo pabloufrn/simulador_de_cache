@@ -1,15 +1,17 @@
-# Simulador de Cache
+### Simulador de Cache
 Projeto da disciplina de Introdução a Organização e Arquitetura de Computadores do Instituto Metrópole Digital (IMD).
-# Compilando o projeto
+## Documentação
+A documentação está dentro da pasta `docs` e pode ser visualizada clicando [Aqui](https://pabloufrn.github.io/simulador_de_cache).
+### Compilando o projeto
 - Usando CMake:  
   Use o comando `cmake CMakeLists` para gerar o arquivo MakeFile, depois use `make` para compilar.
 - Usando g++: 
   Use o comando `g++ -Wall -std=c++11 -Iinclude src/*` para copilar.
-# Executando o projeto
+### Executando o projeto
 Use o comando `./a.out` para compilar, o programa não requer argumentos.  
 Obs.: Tem que existir um arquivo chamado config.txt na pasta data com as 7 configurações.
 
-# Arquivo de Configuração
+### Arquivo de Configuração
 O arquivo de configuração `config.txt` dever estar dentro da pasta `data` e as linhas obedecem a seguinte ordem:
 
 | Configuração            |||                                                                 |
