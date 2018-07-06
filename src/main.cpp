@@ -41,11 +41,11 @@ int main(void)
     std::cout << "Command> ";
     while(std::cin >> comando)
     {
-        if(comando == "Show")
+        if(comando == "Show" or comando == "show")
         {
             app.show();
         }
-        else if(comando == "Read")
+        else if(comando == "Read" or comando == "read")
         {
             std::cin >> comando;
             try
@@ -65,7 +65,7 @@ int main(void)
             }
 
         }
-        else if(comando == "Write")
+        else if(comando == "Write" or comando == "write")
         {
             try
             {
@@ -92,7 +92,7 @@ int main(void)
             }
 
         }
-        else if(comando == "Quit")
+        else if(comando == "Quit" or comando == "quit")
         {
             std::exit(0);
         }
@@ -102,5 +102,5 @@ int main(void)
         }
         std::cout << "Command> ";
     }
-
 }
+
