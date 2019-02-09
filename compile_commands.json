@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/pabloemanuell/site/simulador_de_cache",
+  "command": "/usr/bin/c++   -I/home/pabloemanuell/site/simulador_de_cache/include    -std=gnu++11 -o CMakeFiles/sim_cache.dir/src/main.cpp.o -c /home/pabloemanuell/site/simulador_de_cache/src/main.cpp",
+  "file": "/home/pabloemanuell/site/simulador_de_cache/src/main.cpp"
+},
+{
+  "directory": "/home/pabloemanuell/site/simulador_de_cache",
+  "command": "/usr/bin/c++   -I/home/pabloemanuell/site/simulador_de_cache/include    -std=gnu++11 -o CMakeFiles/sim_cache.dir/src/app.cpp.o -c /home/pabloemanuell/site/simulador_de_cache/src/app.cpp",
+  "file": "/home/pabloemanuell/site/simulador_de_cache/src/app.cpp"
+}
+]

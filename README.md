@@ -6,10 +6,10 @@ A documentação está dentro da pasta `docs` e pode ser visualizada clicando [A
 - Usando CMake:  
   Use o comando `cmake CMakeLists` para gerar o arquivo MakeFile, depois use `make` para compilar.
 - Usando g++: 
-  Use o comando `g++ -Wall -std=c++11 -Iinclude src/*` para copilar.
+  Use o comando `g++ -Wall -std=c++11 -Iinclude src/* -o sim_cache` para copilar.
 ### Executando o projeto
-Use o comando `./a.out` para executar, o programa não requer argumentos.  
-Obs.: Tem que existir um arquivo chamado config.txt na pasta data com as 7 configurações.
+Use o comando `./sim_cache` para executar, o programa não requer argumentos.  
+Obs.: Tem que existir um arquivo chamado `config.txt` na pasta `data` com as 7 configurações.
 
 ### Arquivo de Configuração
 O arquivo de configuração `config.txt` dever estar dentro da pasta `data` e as linhas obedecem a seguinte ordem:

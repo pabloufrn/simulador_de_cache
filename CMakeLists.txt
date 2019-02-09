@@ -1,22 +1,33 @@
-# Set the minimum version of CMake that can be used
-# To find the cmake version run
-# $ cmake --version
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.6)
+project (SIM_CACHE VERSION 1.0.0 LANGUAGES CXX )
 
-# Set the project name
-project (Simulador_De_Cache)
+#=== FINDING PACKAGES ===#
 
-# Add an executable with the above sources
-add_executable(exec src/main.cpp src/app.cpp)
+#--------------------------------
+# This is for old cmake versions
+set (CMAKE_CXX_STANDARD 11)
+#--------------------------------
 
-# Set the direcoties that should be included in the build command for this target
-# when running g++ these will be included as -I/directory/path/
-target_include_directories(exec
-	PRIVATE 
-	${PROJECT_SOURCE_DIR}/include
-	)
+#=== SETTING VARIABLES ===#
+# Compiling flags
+if (WIN32)
+    set( GCC_COMPILE_FLAGS "-Wall -O3 -s" )
+else ()
+	set( GCC_COMPILE_FLAGS "-Wall -O3 -s -no-pie" )
+endif (WIN32)
 
-target_compile_features(exec PRIVATE cxx_range_for)
+set( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COMPILE_FLAGS} ${PREPROCESSING_FLAGS}" )
 
-# Generate compile flags
-set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
+# Set output Paths
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}")
+
+#=== Main App ===
+
+# prepare file and directories
+include_directories( include . )
+file(GLOB SOURCES "src/*.cpp")
+
+# prepare targets
+add_executable(sim_cache ${SOURCES})
+
+
